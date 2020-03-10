@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 int a[10][10];
-#define max 100000000 // 1¾ï-ÃÖ¼Ú°ª ±¸ÇÏ±â À§ÇÔ
+#define max 100000000 // 1ì–µ-ìµœì†Ÿê°’ êµ¬í•˜ê¸° ìœ„í•¨
 int main() {
 	int n;
 	cin >> n;
@@ -13,7 +13,7 @@ int main() {
 		}
 	}
 
-	vector<int>d(n); // aÀÇ ¹æ¹®¼ø¼­
+	vector<int>d(n); // aì˜ ë°©ë¬¸ìˆœì„œ
 	for (int i = 0; i < n; i++) {
 		d[i] = i;
 	}
@@ -29,13 +29,13 @@ int main() {
 			else {
 				sum += a[d[i]][d[i + 1]];
 			}
-		}//d 0¹øÂ°ºÎÅÍ d n-1 ¹øÂ°±îÁö ÇÕ(0ÀÎ°æ¿ì´Â Á¦¿Ü)
+		}//d 0ë²ˆì§¸ë¶€í„° d n-1 ë²ˆì§¸ê¹Œì§€ í•©(0ì¸ê²½ìš°ëŠ” ì œì™¸)
 		if (ok && a[d[n - 1]][d[0]] != 0) {
 			sum += a[d[n - 1]][d[0]];
 			if (ans > sum) {
 				ans = sum; 
-			}// ÃÖ¼Ú°ª
-		}// d n-1¹øÂ°¿¡¼­ d 0À¸·Î µ¹¾Æ¿À´Â °æ¿ì Ãß°¡
+			}// ìµœì†Ÿê°’
+		}// d n-1ë²ˆì§¸ì—ì„œ d 0ìœ¼ë¡œ ëŒì•„ì˜¤ëŠ” ê²½ìš° ì¶”ê°€
 	} while (next_permutation(d.begin(), d.end()));
 	cout << ans << '\n';
 	
