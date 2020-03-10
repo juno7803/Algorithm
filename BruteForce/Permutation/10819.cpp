@@ -12,9 +12,9 @@ int main() {
 	}
 	int ans = 0;
 	sort(a.begin(), a.end());
-	// ¡ÚÁß¿ä¡Ú
-	// '¸ðµç ¼ø¿­'À» next_permutation ÀÌ¿ëÇØ¼­ ±¸ÇÏ·Á¸é, Ã¹ ¼ø¿­ÀÌ ÇÊ¿äÇÔ!
-	// Ã¹ ¼ø¿­ÀÌ¶õ, Á¤·ÄµÇ¾úÀ»¶§ÀÇ Ã¹¹øÀç ¼ö¿­!(µû¶ó¼­ Á¤·ÄÀÌ ÇÊ¼öÀÓ)
+	// â˜…ì¤‘ìš”â˜…
+	// 'ëª¨ë“  ìˆœì—´'ì„ next_permutation ì´ìš©í•´ì„œ êµ¬í•˜ë ¤ë©´, ì²« ìˆœì—´ì´ í•„ìš”í•¨!
+	// ì²« ìˆœì—´ì´ëž€, ì •ë ¬ë˜ì—ˆì„ë•Œì˜ ì²«ë²ˆìž¬ ìˆ˜ì—´!(ë”°ë¼ì„œ ì •ë ¬ì´ í•„ìˆ˜ìž„)
 	do {
 		int tmp = 0;
 		for (int i = 1; i < n; i++) {
