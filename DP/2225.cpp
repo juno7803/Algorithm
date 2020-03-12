@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int d[201][201];
+#define mod 1000000000
+int main() {
+	int n, k;
+	cin >> n >> k;
+	d[0][0] = 1LL;
+	for (int i = 1; i <= k; i++) {
+		for (int j = 0; j <= n; j++) {
+			for (int l = 0; l <= j; l++) {
+				d[i][j] += d[i - 1][j - l];
+				d[i][j] %= mod;
+			}
+		}
+	}
+	cout << d[k][n] << '\n';
+	// d[k][n] = sum(d[k-1][n-L])
+	// 0 <= L <= n
+	return 0;
+}
