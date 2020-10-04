@@ -2,9 +2,12 @@
 Algorithm practice
 Target : 1day per 1 problem!
 
-## 알고리즘 공부 다시 시작(9/29~)
+## 알고리즘 인증 스터디 참여
 사용 언어 변경 C++ -> Python
-하루에 한 문제 풀기
+하루에 한 문제 풀기!
+10/9 (금) 까지
+   - Bronze I [4344](https://www.acmicpc.net/problem/4344)
+   - Silver IV [9012](https://www.acmicpc.net/problem/9012)
 
 ### 자료구조
 STACK
